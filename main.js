@@ -2,9 +2,11 @@ var fs = require('fs');
 
 function getFileSize(filename) {
   'use strict';
+  
   var stats = fs.statSync('test/' + filename),
-      fileSize = stats.size;
+    fileSize = stats.size;
   return fileSize;
+  
 }
 
 fs.readdir('test/', function (err, files) {
