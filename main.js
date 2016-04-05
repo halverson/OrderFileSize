@@ -1,5 +1,5 @@
 var fs = require('fs');
-var dirToRead = 'test/';
+var dirToRead = './';
 
 function getFileSize(filename) {
   'use strict';
